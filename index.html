@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .resultado {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #000;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        #botao1:checked ~ .mensagem1,
+        #botao2:checked ~ .mensagem2,
+        #botao3:checked ~ .mensagem3,
+        #botao4:checked ~ .mensagem4,
+        #botao5:checked ~ .mensagem5 {
+            display: block;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+    <title>Jogo da Sorte</title>
+</head>
+<body>
+    <h1 style="color:rgb(5, 7, 138);">Jogo da Sorte</h1>
+    <h1>Escolha o botão da sorte</h1>
+
+    <input type="radio" id="botao1" name="botao">
+    <label for="botao1">
+        <button>Botão 1</button>
+    </label>
+
+    <input type="radio" id="botao2" name="botao">
+    <label for="botao2">
+        <button>Botão 2</button>
+    </label>
+
+    <input type="radio" id="botao3" name="botao">
+    <label for="botao3">
+        <button>Botão 3</button>
+    </label>
+
+    <input type="radio" id="botao4" name="botao">
+    <label for="botao4">
+        <button>Botão 4</button>
+    </label>
+
+    <input type="radio" id="botao5" name="botao">
+    <label for="botao5">
+        <button>Botão 5</button>
+    </label>
+
+    <div class="resultado mensagem1"style="background-color:rgb(221, 0, 0);">Você errou! O botão correto não era o 1.</div>
+    <div class="resultado mensagem2"style="background-color:rgb(221, 0, 0);">Você errou! O botão correto não era o 2.</div>
+    <div class="resultado mensagem3"style="background-color:rgb(0, 255, 13);">Parabéns! Você acertou o botão da sorte [3]!</div>
+    <div class="resultado mensagem4"style="background-color:rgb(221, 0, 0);">Você errou! O botão correto não era o 4.</div>
+    <div class="resultado mensagem5"style="background-color:rgb(221, 0, 0);">Você errou! O botão correto não era o 5.</div>
+
+</body>
+</html>
